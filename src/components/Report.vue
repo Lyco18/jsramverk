@@ -17,7 +17,7 @@
         Prior to compile, make sure XXAMP is running apache. As this is running on your localhost. In this case, localhost:8080. The following line will automatically update changes, and check your code for errors.
     </h3>
     <h3>
-        $ npm run serve
+        $ {{ text[0] }}
     </h3>
     <br>
     <p> Compiles and minifies for production</p>
@@ -26,7 +26,7 @@
         The script "build" and create a script which runs your application.
     </h3>
     <h3>
-        $ npm run build
+        $ {{ text[1] }}
     </h3>
     <br>
     <p> Run your tests </p>
@@ -35,7 +35,7 @@
         Unit test runner.
     </h3>
     <h3>
-        $ npm run test
+        $ {{ text[2] }}
     </h3>
     <br>
     <p> Lints and fixes files </p>
@@ -43,7 +43,7 @@
         Flags for any programming errors and bugs.
     </h3>
     <h3>
-        $ npm run lint
+        $ {{ text[3] }}
     </h3>
 
 </main>
@@ -60,7 +60,12 @@ export default {
   },
   data() {
     return {
-      text: "",
+      text: [
+      'npm run serve',
+      'npm run build',
+      'npm run test',
+      'npm run lint'
+      ],
     }
   }
 }
