@@ -2,7 +2,9 @@
 <nav>
     <ul>
         <li><router-link to="/">Me</router-link></li>
+        <li><router-link to="/form">Form</router-link></li>
         <li><router-link to="/reports/week/1">Week one</router-link></li>
+        <li><router-link to="/reports/week/2">Week two</router-link></li>
     </ul>
 </nav>
 </template>
