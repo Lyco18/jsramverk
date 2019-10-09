@@ -1,5 +1,4 @@
 <template>
-<div id="app">
 <main>
     <Nav />
     <h2>FORM</h2>
@@ -28,13 +27,11 @@
         <input type="submit" value="Register">
     </form>
 </main>
-</div>
 </template>
 
 <script>
 import Nav from './Nav.vue';
 import DatePicker from 'vue2-datepicker';
-
 
 export default {
     name: 'app',
@@ -63,4 +60,9 @@ input.input-field {
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+
+.input-field:focus {
+    outline: 2px solid #9e7cd7;
+}
+
 </style>
