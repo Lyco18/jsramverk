@@ -2,7 +2,8 @@
 <main>
     <Nav />
     <h2>Report 2</h2>
-    <p>Project setup</p>
+    <p>Github</p>
+    <h3><a href="https://github.com/Lyco18/jsramverk.git">Lydias Repo</a></h3>
     <br>
 
 </main>

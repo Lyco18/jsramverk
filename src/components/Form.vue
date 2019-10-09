@@ -1,4 +1,5 @@
 <template>
+<div id="app">
 <main>
     <Nav />
     <h2>FORM</h2>
@@ -8,7 +9,8 @@
         </label><br>
 
         <label class="input-label">Födelsedag<br>
-            <input type="date" name="birthday" class="input-field" required/>
+            <!-- <input type="date" name="birthday" class="input-field" required/> -->
+            <date-picker v-model="date" lang="eng" type="date" format="YYYY-MM-DD"></date-picker>
         </label><br>
 
         <label class="input-label">E-post<br>
@@ -26,29 +28,28 @@
         <input type="submit" value="Register">
     </form>
 </main>
+</div>
 </template>
 
 <script>
 import Nav from './Nav.vue';
+import DatePicker from 'vue2-datepicker';
+
 
 export default {
-  name: 'Form',
-  props: { },
-  components: {
-      Nav,
-  },
-  data() {
-  return {
-    attributes: [
-      {
-        key: 'today',
-        highlight: true,
-        dates: new Date()
-      }
-    ]
+    name: 'app',
+    props: { },
+    components: {
+        Nav,
+        DatePicker,
+    },
+    data() {
+        return {
+            date: ""
+        }
     }
-  }
 }
+
 </script>
 
 <style scoped>
